@@ -13,9 +13,9 @@ const connectDB = async () => {
         process.exit(1)
       })
 
-      app.listen(process.env.PORT || 3001 , ()=> {
-        console.log(`app is listening from this :${process.env.PORT}`)
-      })
+      // app.listen(process.env.PORT || 3001 , ()=> {
+      //   console.log(`app is listening from this :${process.env.PORT}`)
+      // })
     }catch(error){  
         console.error("MONGODB connection Faild", error)
         process.exit(1)
